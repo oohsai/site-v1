@@ -58,31 +58,31 @@ export default function Testimonials() {
   ]
 
   return (
-    <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-black mb-12 text-balance">What Our Clients Say</h2>
+        <h2 className="text-4xl font-bold text-white mb-12 text-balance">What Our Clients Say</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, idx) => (
             <div key={idx} className="flex flex-col">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-black text-lg">
+                  <span key={i} className="text-white text-lg">
                     ★
                   </span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 leading-relaxed flex-grow">{testimonial.content}</p>
+              <p className="text-neutral-300 mb-6 leading-relaxed flex-grow">{testimonial.content}</p>
               <div>
-                <p className="font-semibold text-black">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <p className="font-semibold text-white">{testimonial.name}</p>
+                <p className="text-sm text-neutral-400">{testimonial.role}</p>
               </div>
             </div>
           ))}
         </div>
 
         <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-black mb-8 text-center">Our Latest Work</h3>
+          <h3 className="text-2xl font-semibold text-white mb-8 text-center">Our Latest Work</h3>
           <div className="overflow-hidden rounded-lg">
             <div
               ref={marqueeRef}
@@ -94,7 +94,7 @@ export default function Testimonials() {
               {[...mediaItems, ...mediaItems].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 w-72 h-48 bg-gray-100 rounded-lg overflow-hidden border border-gray-200"
+                  className="flex-shrink-0 w-72 h-48 bg-neutral-900 rounded-lg overflow-hidden border border-neutral-700 hover:bg-neutral-800 hover:border-neutral-600 transition-all duration-300"
                 >
                   <img
                     src={item.url || "/placeholder.svg"}

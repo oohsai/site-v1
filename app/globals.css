@@ -8,25 +8,25 @@ html {
 }
 
 :root {
-  --background: oklch(0.92 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: oklch(0.1 0 0); /* Very dark, almost black */
+  --foreground: oklch(0.98 0 0); /* Near white for text */
+  --card: oklch(0.15 0 0); /* Slightly lighter for cards */
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.15 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.98 0 0); /* White primary */
+  --primary-foreground: oklch(0.1 0 0); /* Black text on white */
+  --secondary: oklch(0.25 0 0); /* Dark gray */
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.2 0 0); /* Muted dark backgrounds */
+  --muted-foreground: oklch(0.7 0 0); /* Muted light text */
+  --accent: oklch(0.98 0 0); /* White accent */
+  --accent-foreground: oklch(0.1 0 0); /* Black on white */
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.3 0 0); /* Subtle dark borders */
+  --input: oklch(0.2 0 0); /* Dark input backgrounds */
+  --ring: oklch(0.5 0 0); /* Focus rings */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -44,25 +44,25 @@ html {
 }
 
 .dark {
-  --background: oklch(0.15 0 0); /* neutral-900 equivalent */
-  --foreground: oklch(0.98 0 0); /* near white for text */
-  --card: oklch(0.18 0 0); /* slightly lighter for cards */
+  --background: oklch(0.05 0 0); /* Ultra black */
+  --foreground: oklch(0.98 0 0); /* Near white for text */
+  --card: oklch(0.1 0 0); /* Slightly lighter for cards */
   --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.18 0 0);
+  --popover: oklch(0.1 0 0);
   --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.98 0 0); /* white primary in dark mode */
-  --primary-foreground: oklch(0.15 0 0); /* dark text on white bg */
-  --secondary: oklch(0.25 0 0); /* gray-800 equivalent */
+  --primary: oklch(0.98 0 0); /* White primary in dark mode */
+  --primary-foreground: oklch(0.05 0 0); /* Black text on white bg */
+  --secondary: oklch(0.15 0 0); /* Very dark gray */
   --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.25 0 0); /* muted backgrounds */
-  --muted-foreground: oklch(0.7 0 0); /* muted text */
-  --accent: oklch(0.25 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.5 0.2 15); /* red for errors */
+  --muted: oklch(0.15 0 0); /* Muted backgrounds */
+  --muted-foreground: oklch(0.7 0 0); /* Muted text */
+  --accent: oklch(0.98 0 0);
+  --accent-foreground: oklch(0.05 0 0);
+  --destructive: oklch(0.5 0.2 15); /* Red for errors */
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.25 0 0); /* subtle borders */
-  --input: oklch(0.2 0 0); /* input backgrounds */
-  --ring: oklch(0.5 0 0); /* focus rings */
+  --border: oklch(0.2 0 0); /* Subtle borders */
+  --input: oklch(0.15 0 0); /* Input backgrounds */
+  --ring: oklch(0.4 0 0); /* Focus rings */
   --chart-1: oklch(0.6 0.2 200); /* blue */
   --chart-2: oklch(0.7 0.15 150); /* green */
   --chart-3: oklch(0.65 0.18 50); /* yellow */
@@ -121,20 +121,20 @@ html {
 
 
 :root {
-  --background: #fdfdfd;
-  --foreground: #171717;
-  --primary: #FFC700;
-  --primary-foreground: #ffffff;
-  --border: #e5e7eb;
+  --background: #000000; /* Pure black */
+  --foreground: #ffffff; /* Pure white */
+  --primary: #ffffff; /* White primary */
+  --primary-foreground: #000000; /* Black on white */
+  --border: #333333; /* Dark borders */
 }
 
 /* Dark mode overrides for custom variables */
 .dark {
-  --background: #171717; /* neutral-900 */
+  --background: #000000; /* Even darker black */
   --foreground: #ffffff;
-  --primary: #FFC700;
+  --primary: #ffffff;
   --primary-foreground: #000000;
-  --border: #404040;
+  --border: #1a1a1a; /* Very dark borders */
 }
 
 @utility container {
@@ -186,5 +186,12 @@ body {
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Logo optimization */
+  img[alt*="Logo"], img[alt*="logo"] {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter: contrast(1.1) brightness(1.05);
   }
 }
