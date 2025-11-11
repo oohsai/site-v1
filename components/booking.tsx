@@ -30,7 +30,7 @@ export default function Booking() {
   }
 
   return (
-    <section id="booking" className="py-20 px-4 sm:px-6 lg:px-8 bg-black text-white">
+    <section id="booking" className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-900 text-white">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 text-balance">Let&apos;s Work Together</h2>
         <p className="text-gray-300 mb-10 text-balance">
@@ -44,7 +44,7 @@ export default function Booking() {
               type="text"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-white transition text-white"
+              className="w-full px-4 py-3 bg-neutral-900 border border-gray-700 rounded-lg focus:outline-none focus:border-white transition text-white"
               placeholder="Your name"
               required
             />
@@ -56,7 +56,7 @@ export default function Booking() {
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-white transition text-white"
+              className="w-full px-4 py-3  bg-neutral-900 border border-gray-700 rounded-lg focus:outline-none focus:border-white transition text-white"
               placeholder="your@email.com"
               required
             />
@@ -67,7 +67,7 @@ export default function Booking() {
             <textarea
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-white transition text-white h-32 resize-none"
+              className="w-full px-4 py-3  bg-neutral-900 border border-gray-700 rounded-lg focus:outline-none focus:border-white transition text-white h-32 resize-none"
               placeholder="Share your goals and vision..."
               required
             ></textarea>
